@@ -17,54 +17,6 @@ inoremap ,V <Esc>:call SuperSelect()<CR>
 nnoremap ,V :call SuperSelect()<CR>
 vmap ,V :<C-u>call ExtendSelection()<CR>
 
-
-command! -nargs=1 CopyFunc call CopyDecrementFunction(<f-args>)
-
-
-function CopyDecrementFunction(baseName)
-    let l:number = matchstr(a:baseName, '\d\+$')
-    let l:prefix = a:baseName[: -len(l:number) - 1]
-
-    let l:number = str2nr(l:number)
-
-    let l:startPattern = '^function\s\+' . l:prefix . l:number . '\s*('
-    let l:startLine = search(l:startPattern, 'bcW')
-    if l:startLine == 0
-        echo "Function not found"
-        return
-    endif
-
-    let l:braceCount = 0
-    let l:lineNum = l:startLine
-    let l:functionText = []
-    let l:output = []
-
-    while l:lineNum <= line('$')
-        let l:lineText = getline(l:lineNum)
-        let l:functionText += [l:lineText]
-        let l:braceCount += len(substitute(l:lineText, '[^{]', '', 'g'))
-        let l:braceCount -= len(substitute(l:lineText, '[^}]', '', 'g'))
-        if l:braceCount == 0
-            break
-        endif
-        let l:lineNum += 1
-    endwhile
-
-    let l:functionName = l:prefix . l:number
-
-    call remove(l:functionText, 0)
-
-    for i in range(1, l:number)
-        let l:newName = l:prefix . i
-        let l:newFunctionText = ["function ".l:newName."(){"] + l:functionText + [""]
-        call add(l:output,l:newFunctionText)
-    endfor
-
-    call setline(l:startLine - 1, flatten(l:output)) 
-endfunction
-
-
-
 function! SuperSelect()
 let c = getline('.')[col('.') - 1]
 if c =~ '\w'
