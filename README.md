@@ -1,4 +1,4 @@
-[![README](README.JPG)]
+![README](README.JPG)
 ## How I wrote bacionejs on an Android tablet
 ## Installed
 - termux
