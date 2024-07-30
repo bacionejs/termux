@@ -22,4 +22,7 @@ I used the Neovim editor to create the Bacionejs editor. Below is my setup.
 
 ## Which editor should you use for programming on a phone/tablet?
 There are several editors on the playstore but Termux/Neovim is superior. Download Termux via github and install Neovim via pkg install.
-However, vim-motions are't designed for typing with a thumb. To address this I wrote bacionejs [why](https://github.com/bacionejs/editor?tab=readme-ov-file)
+
+However, vim-motions are't designed for typing with a thumb
+
+To address this I wrote bacionejs [why](https://github.com/bacionejs/editor?tab=readme-ov-file)
