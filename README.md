@@ -6,7 +6,6 @@ I used the Neovim editor to create the Bacionejs editor. Below is my setup.
 
 ## Installed
 - [termux](https://github.com/termux)
-- nodejs
 - apache
 - neovim
 - conquer of completion
