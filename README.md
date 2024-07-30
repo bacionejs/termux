@@ -12,6 +12,6 @@
 - init.vim
 
 ## Access with or without wifi
-- Access Apache via wifi and localhost (127.0.0.1:8080) (no internet required).
+- Access Apache via wifi and localhost 127.0.0.1:8080 (no internet required).
 - If no wifi, then use hotspot, but use back, then forward in browser to refresh because normal refresh doesn't work with hotspot.
 - Or put your file in downloads and edit in neovim via ~/storage/downloads. This method only works if it is one monolithic file with a html suffix. And to prevent syntax highlighting issues when editing a combo html/javascript file, use neovim :syntax sync fromstart.
