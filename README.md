@@ -5,7 +5,7 @@
 I used the Neovim editor to create the Bacionejs editor. Below is my setup.
 
 ## Installed
-- termux
+- [termux](https://github.com/termux)
 - nodejs
 - apache
 - neovim
@@ -15,16 +15,18 @@ I used the Neovim editor to create the Bacionejs editor. Below is my setup.
 - termux.properties
 - init.vim
 
-## Access with or without wifi
-- Access Apache via wifi and localhost 127.0.0.1:8080 (no internet required).
-- If no wifi, then use hotspot, but use back, then forward in browser to refresh because normal refresh doesn't work with hotspot.
-- Or edit in neovim via ~/storage/downloads and open in browser from file manager. This method only works if it is one monolithic file with a html suffix. And to prevent syntax highlighting issues when editing a combo html/javascript file, use neovim :syntax sync fromstart.
+## Access with or without Wi-Fi
 
-## Which editor to use for programming on a phone/tablet?
-There are several editors in the playstore, but Termux/Neovim is superior. Download Termux via github and install Neovim via pkg install.
+- **Access Apache via Wi-Fi**: Use `localhost 127.0.0.1:8080` (no internet required).
+- **If no Wi-Fi is available**: Use a hotspot. To refresh the page, navigate back and then forward in the browser, as the normal refresh doesn't work with a hotspot.
+- **An Alternative to Apache**:
+  - Edit files in `~/storage/downloads`.
+  - Open the file in a browser from the file manager.
+  - This method works only if it is a single monolithic file with an `.html` suffix.
+  - To prevent syntax highlighting issues when editing combined HTML/JavaScript files, use the Neovim command `:syntax sync fromstart`.
 
-However, vim-motions aren't designed for typing with a thumb.
+## Which Editor to Use for Programming on a Phone/Tablet Offline?
 
-To address this I wrote [bacionejs](https://github.com/bacionejs/editor).
+There are several editors available on the Play Store, but **Termux** combined with **Neovim** stands out as the superior choice. However, vim motions aren’t optimized for typing with a thumb.
 
-However, bacionejs is only intended for writing small javascript games. Anything more than that should use Neovim.
+To address this issue, I created **[bacionejs](https://github.com/bacionejs/editor)**, which is designed specifically for writing small JavaScript games on mobile devices. For more extensive programming tasks, Neovim remains the recommended option.
