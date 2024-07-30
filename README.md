@@ -21,8 +21,10 @@ I used the Neovim editor to create the Bacionejs editor. Below is my setup.
 - Or edit in neovim via ~/storage/downloads and open in browser from file manager. This method only works if it is one monolithic file with a html suffix. And to prevent syntax highlighting issues when editing a combo html/javascript file, use neovim :syntax sync fromstart.
 
 ## Which editor to use for programming on a phone/tablet?
-There are several editors on the playstore but Termux/Neovim is superior. Download Termux via github and install Neovim via pkg install.
+There are several editors in the playstore, but Termux/Neovim is superior. Download Termux via github and install Neovim via pkg install.
 
-However, vim-motions are't designed for typing with a thumb
+However, vim-motions aren't designed for typing with a thumb.
 
-To address this I wrote bacionejs [why](https://github.com/bacionejs/editor?tab=readme-ov-file)
+To address this I wrote [bacionejs](https://github.com/bacionejs/editor).
+
+However, bacionejs is only intended for writing small javascript games. Anything more than that should use Neovim.
