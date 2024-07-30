@@ -1,5 +1,7 @@
 ![README](README.JPG)
 ## How I wrote [bacionejs](https://github.com/bacionejs/editor) on an Android tablet
+Bacione Javascript Editor is an Integrated Development Environment (IDE) for programming small javascript games on a phone. Several games are included.
+
 ## Installed
 - termux
 - nodejs
