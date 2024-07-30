@@ -1,6 +1,8 @@
 ![README](README.JPG)
-## How I wrote [bacionejs](https://github.com/bacionejs/editor) on an Android tablet
-Bacione Javascript Editor is an Integrated Development Environment (IDE) for programming small javascript games on a phone. Several games are included.
+## How I wrote bacionejs on an Android tablet
+[Bacione Javascript Editor](https://github.com/bacionejs/editor) is an Integrated Development Environment (IDE) for programming small javascript games on a phone. Several games are included.
+
+I used the Neovim editor to create the Bacionejs editor. Below is my setup.
 
 ## Installed
 - termux
