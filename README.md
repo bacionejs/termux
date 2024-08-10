@@ -23,7 +23,7 @@ To address this issue, I created **[bacionejs](https://github.com/bacionejs/edit
 ## Access with or without Wi-Fi
 
 - **Access Apache via Wi-Fi**: Use localhost `127.0.0.1:8080` (no internet required).
-- **Airplane mode**: In airplane mode the Chrome browser Refresh button doesn't refresh.
+- **Access Apache in Airplane Mode**: In airplane mode the Chrome browser Refresh button doesn't refresh.
 As a workaround click back OR forward to refresh (toggling between 2 dummy URL queries).
 This workaround is fine as it is still only ONE click.
 BTW, you don't need the dummy queries, just click back AND forward, but that is TWO clicks.
