@@ -35,7 +35,7 @@ The two dummy URL queries might look like:
 - **An Alternative to Apache**:
   - Edit files in `~/storage/downloads`.
   - Open the file in a browser from the file manager.
-  - This method works only if it is a single monolithic file with an `.html` suffix.
+  - This method works **only** if it is a single monolithic file with an `.html` suffix.
   - To prevent syntax highlighting issues when editing combined HTML/JavaScript files, use the Neovim command `:syntax sync fromstart`.
   - An alternative to file manager is to make a bookmark. To make a bookmark, edit an existing bookmark and point it to `file:///storage/emulated/0/download/index.html`
 
