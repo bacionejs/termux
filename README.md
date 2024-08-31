@@ -27,7 +27,7 @@ To address this issue, I created **[bacionejs](https://github.com/bacionejs/edit
 As a workaround click back OR forward to refresh (toggling between 2 dummy URL queries).
 This workaround is fine as it is still only ONE click.
 BTW, you don't need the dummy queries, just click back AND forward, but that is TWO clicks.
-Clearing the browser cache also works but that is 10 clicks.
+Clearing the browser cache also works but that is 10 clicks. You could also increment the dummy query but that is 4 click.
 The two dummy URL queries might look like:
   - 127.0.0.1:8080/index.html?1
   - 127.0.0.1:8080/index.html?2
