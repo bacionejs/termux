@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard name="smallkeyboard" script="latin" bottom_row="false">
+
+
+<row>
+<key key0=" &lt;" key1="config"/>
+<key key0=" &gt;"/>
+<key key0=" C" key7=" Y"/>
+<key key0=" V"/>
+<key key0=" B"/>
+<key key0=" N"/>
+<key key0=" U"/>
+<key key0=" R"/>
+<key key0=" S"/>
+<key key0="esc"/>
+</row>
+<row>
+<key key0="%"/>
+<key key0="~"/>
+<key key0="home"/>
+<key key0="end"/>
+<key key0="left"/>
+<key key0="right"/>
+<key key0="down"/>
+<key key0="up"/>
+<key key0="tab"/>
+<key key0="ctrl"/>
+</row>
+<row>
+<key key0="?"/>
+<key key0="\\"/>
+<key key0="_"/>
+<key key0="#"/>
+<key key0="`"/>
+<key key0="'"/>
+<key key0="&quot;"/>
+<key key0="*"/>
+<key key0="!"/>
+<key key0="/"/>
+</row>
+<row>
+<key key0="("/>
+<key key0=")"/>
+<key key0="{"/>
+<key key0="}"/>
+<key key0="["/>
+<key key0="]"/>
+<key key0=","/>
+<key key0=";"/>
+<key key0=":"/>
+<key key0="."/>
+</row>
+<row>
+<key key0="^"/>
+<key key0="$"/>
+<key key0="@"/>
+<key key0="&amp;"/>
+<key key0="|"/>
+<key key0="+"/>
+<key key0="-"/>
+<key key0="&lt;"/>
+<key key0="&gt;"/>
+<key key0="="/>
+</row>
+<row>
+<key key0="1"/>
+<key key0="2"/>
+<key key0="3"/>
+<key key0="4"/>
+<key key0="5"/>
+<key key0="6"/>
+<key key0="7"/>
+<key key0="8"/>
+<key key0="9"/>
+<key key0="0"/>
+</row>
+<row>
+<key key0="q"/>
+<key key0="w"/>
+<key key0="e"/>
+<key key0="r" key7="R"/>
+<key key0="t"/>
+<key key0="y"/>
+<key key0="u"/>
+<key key0="i"/>
+<key key0="o" key7="O"/>
+<key key0="p" key7="P"/>
+</row>
+<row>
+<key key0="a"/>
+<key key0="s"/>
+<key key0="d" key7="D"/>
+<key key0="f"/>
+<key key0="g" key7="G"/>
+<key key0="h"/>
+<key key0="j" key7="J"/>
+<key key0="k"/>
+<key key0="l"/>
+<key key0="shift"/>
+</row>
+<row>
+<key key0="z"/>
+<key key0="x"/>
+<key key0="c" key7="C"/>
+<key key0="v" key7="V"/>
+<key key0="b"/>
+<key key0="n"/>
+<key key0="m"/>
+<key key0="space"/>
+<key key0="backspace"/>
+<key key0="enter"/>
+</row>
+
+
+</keyboard>
