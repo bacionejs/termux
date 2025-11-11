@@ -5,7 +5,7 @@
 
 <img src="README.jpg" alt="README image" width="30%">
 
-## How I wrote bacionejs on an Android
+## How I wrote bacionejs on Android
 [Bacione Javascript Editor](https://github.com/bacionejs/editor) is an Integrated Development Environment (IDE) for programming small javascript games on a phone. Several games are included.
 
 I used the Neovim editor to create the Bacionejs editor. Below is my setup.
