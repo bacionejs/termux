@@ -22,6 +22,28 @@ There are several editors available on the Play Store, but **Termux** combined w
 
 To address this issue, I created **[bacionejs](https://github.com/bacionejs/editor)**, which is designed specifically for programming small JavaScript games on mobile devices offline. For more extensive programming tasks, Neovim remains the recommended option.
 
+## Unexpected Keyboard
+
+A great keyboard for coding in **Neovim on Termux (Android)** is:  
+[Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)
+
+### My Layout
+[View my layout](https://github.com/bacionejs/termux/blob/main/unexpectedkeyboardphone.txt)
+
+### Custom Layout Guide
+To learn how to create your own layout, see the documentation:  
+[Custom Layouts](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md#layout)
+
+### Tips
+- Set keyboard height to **15%** for optimal use.
+
+### ⚠️ Beware
+- My top row contains **Neovim mappings**.  
+  For example, `S` is actually `<space>S` (where `<space>` is the leader key).  
+  This mapping triggers `:w` (save). You’ll likely want to remove these mappings.
+- I no longer use this keyboard, so you won’t find these mappings in my current `init.vim`.
+
+
 ## Access with or without Wi-Fi
 
 - **Access Apache via Wi-Fi**: Use localhost `127.0.0.1:8080` (no internet required).
