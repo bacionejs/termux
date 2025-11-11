@@ -1,4 +1,7 @@
 
+## Configured termux extra-keys to replace entire keyboard
+- termux.properties
+- init.vim
 
 <img src="README.jpg" alt="README image" width="30%">
 
@@ -12,10 +15,6 @@ I used the Neovim editor to create the Bacionejs editor. Below is my setup.
 - apache
 - neovim
 - conquer of completion
-
-## Configured termux extra-keys to replace entire keyboard
-- termux.properties
-- init.vim
 
 ## Which Editor to Use for Programming on a Phone/Tablet Offline?
 
