@@ -1,4 +1,4 @@
-![README](README.JPG)
+![README](README.jpg)
 ## How I wrote bacionejs on an Android tablet
 [Bacione Javascript Editor](https://github.com/bacionejs/editor) is an Integrated Development Environment (IDE) for programming small javascript games on a phone. Several games are included.
 
