@@ -32,7 +32,7 @@ A great keyboard for coding in **Neovim on Termux (Android)** is:
 
 ### Custom Layout Guide
 To learn how to create your own layout, see the documentation:  
-[Custom Layouts](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md#layout)
+[Custom Layouts](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md)
 
 ### Tips
 - Set keyboard height to **15%** for optimal use.
