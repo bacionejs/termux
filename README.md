@@ -19,7 +19,7 @@ My configuration below support these shortcuts:
 Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md)  
 Set keyboard height to **10%**  
 
-layout
+```layout```
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
@@ -52,7 +52,7 @@ layout
 
 Using [termux extra-keys](https://wiki.termux.com/wiki/Touch_Keyboard) **for entire keyboard**  
 
-termux.properties
+```termux.properties```
 ```properties
 hide-soft-keyboard-on-startup = true
 shortcut.previous-session = ctrl + 1
