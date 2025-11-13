@@ -1,6 +1,8 @@
 There are several editors available on the Play Store, but **Termux** combined with **Neovim** stands out as the superior choice. However, vim motions aren’t optimized for typing with a **thumb**. To address this issue, I created **[bacionejs](https://github.com/bacionejs/editor)**, which is designed specifically for programming small JavaScript games on mobile devices offline. For more extensive programming tasks, Neovim remains the recommended option.
 
-My configurations are for phones. For tablets change shift="0" to 10 or add blank keys.
+My configurations are for phones.  
+For tablets change shift="0" to 10 or add blank keys.
+To toggle hiding keyboard or extra-keys, swipe-right on termux left and long-press "keyboard"
 My configuration below support these shortcuts:
 - jump prev/next
 - jump next buffer
@@ -15,8 +17,8 @@ My configuration below support these shortcuts:
 
 
 
-## Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)
-- Set keyboard height to **10%**
+Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)  
+Set keyboard height to **10%**  
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +50,7 @@ My configuration below support these shortcuts:
 </keyboard>
 ```
 
-## Using termux extra-keys **for entire* keyboard**
+Using termux extra-keys **for entire* keyboard**  
 
 ```termux.properties
 terminal-cursor-blink-rate = 1000
