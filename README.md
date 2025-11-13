@@ -1,5 +1,4 @@
 <div style="max-height: 200px; overflow-y: auto;">
-```markdown
 
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
@@ -106,7 +105,7 @@ Beware: the top two rows contain neovim macros and some point to functions in in
 
 
 </keyboard>
-```
+
 </div>
 
 ## Configured termux extra-keys to replace entire keyboard
