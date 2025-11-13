@@ -1,5 +1,8 @@
 
-There are several Android code editors available on the Play Store, but **Termux** combined with **Neovim** stands out as the superior choice. However, vim motions aren’t optimized for typing with a **thumb**. To address this issue, I created the **[BacioneJS](https://github.com/bacionejs/editor)** editor IDE, which is designed specifically for programming small JavaScript games on mobile devices offline. But for more extensive programming tasks, **Termux/Neovim** remains the recommended option.
+There are several Android code editors available on the Play Store, but **Termux** combined with **Neovim** stands out as the superior choice. However, vim motions aren’t optimized for typing with a **thumb**. To address this issue, I created the **BacioneJS** editor IDE, which is designed specifically for programming small JavaScript games on mobile devices offline.  
+  
+For BacioneJS, see https://github.com/bacionejs/editor  
+For Termux/Neovim, see below.
 
 ---
 
