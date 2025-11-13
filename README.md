@@ -15,7 +15,6 @@ https://github.com/termux/termux-app
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
 
 My **Termux/Neovim** configuration below is for phones.  
-For tablets add blank keys to the left to push the keyboard to the right side.  
 My configuration below supports these **shortcuts**:  
 - save
 - backup
@@ -39,6 +38,7 @@ extra-keys-text-all-caps = false
 hide-soft-keyboard-on-startup = true
 shortcut.previous-session = ctrl + 1
 
+# For tablets add 9 blank keys at the left of each row to push the keyboard to the right side for ease of right-thumb typing.  
 extra-keys = [\
 [ \
 {key:HOME,display:'<<'}, {key:END,display:'>>'},\
