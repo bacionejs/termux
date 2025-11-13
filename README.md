@@ -7,6 +7,7 @@ For Termux/Neovim, see below.
 ---
 
 **Termux/Neovim**
+https://github.com/termux/termux-app
 
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
 Below are two keyboard solutions:
@@ -29,7 +30,8 @@ My configurations below support these **shortcuts**:
 
 ---
 
-Using [Unexpected-Keyboard](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md) for keyboard  
+Using Unexpected-Keyboard  
+https://github.com/Julow/Unexpected-Keyboard  
 Set keyboard height to **10%**  
 
 `layout`
