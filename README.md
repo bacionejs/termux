@@ -20,6 +20,7 @@ My configuration below support these shortcuts:
 Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)  
 Set keyboard height to **10%**  
 
+layout
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
@@ -50,12 +51,10 @@ Set keyboard height to **10%**
 </keyboard>
 ```
 
-Using termux extra-keys **for entire* keyboard**  
+Using termux extra-keys **for entire keyboard**  
 
-```termux.properties
-terminal-cursor-blink-rate = 1000
-terminal-cursor-style = bar
-extra-keys-text-all-caps = false
+termux.properties
+```properties
 hide-soft-keyboard-on-startup = true
 shortcut.previous-session = ctrl + 1
 
