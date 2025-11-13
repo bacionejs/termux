@@ -50,7 +50,7 @@ layout
 </keyboard>
 ```
 
-Using termux extra-keys **for entire keyboard**  
+Using [termux extra-keys](https://wiki.termux.com/wiki/Touch_Keyboard) **for entire keyboard**  
 
 termux.properties
 ```properties
