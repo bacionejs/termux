@@ -9,6 +9,7 @@ A good keyboard setup is an important part of **reducing frustration** when codi
 Below are two keyboard solutions:
 - Unexpected-Keyboard
 - termux-extra-keys (hack using as entire keyboard).  
+
 My **Termux/Neovim** configurations below are for phones. For tablets change shift="0" to 10 or add blank keys.  
 To toggle hiding the keyboard or extra-keys, swipe-right on termux left and long-press or click "keyboard".  
 My configurations below support these **shortcuts**:  
