@@ -54,7 +54,7 @@ Set keyboard height to **10%**
 
 </keyboard>
 ```
-
+---
 Using [termux extra-keys](https://wiki.termux.com/wiki/Touch_Keyboard) **for entire keyboard**  
 
 ```termux.properties```
@@ -88,8 +88,8 @@ extra-keys = [\
 
 
 ```
-
-## init.vim
+---
+```init.vim```
 ```
 let mapleader=","
 
