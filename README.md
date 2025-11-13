@@ -21,7 +21,8 @@ My configurations below support these **shortcuts**:
 - close file
 - undo/redo
 - ctrl/esc
-- comment line. swipeup comments and pastes duplicate
+- toggle highlight
+- toggle comments. swipeup comments and pastes duplicate
 - context-aware selection
 
 ---
@@ -110,7 +111,7 @@ nnoremap ,B :let fname = substitute(fnamemodify(expand('%:p'), ':h:t') . '/' . e
 " toggles * highlight. also prevents auto-advance.
 nnoremap <silent><expr> * (&hls && v:hlsearch ? ':noh' : ':let @/= "\\<" . expand("<cword>") . "\\>" \| set hls')."\n"
 
-" toggles comments. also, i pair it with swipeup, which comments and pastes.
+" toggles comments
 nnoremap + :call CommentReplaceAndMove()<CR>
 function! CommentReplaceAndMove()
     let c = substitute(&commentstring, '%s', '', '')
@@ -118,7 +119,7 @@ function! CommentReplaceAndMove()
     normal! j
 endfunction
 
-" Context-aware selection.  for example yiw becomes V (less clicks).
+" Context-aware selection. for example yiw becomes V (less clicks).
 " also works with paragraphs, quotes and blocks
 inoremap ,V <Esc>:call SuperSelect()<CR>
 nnoremap ,V :call SuperSelect()<CR>
