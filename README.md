@@ -4,8 +4,8 @@ There are several editors available on the Play Store, but **Termux** combined w
 ---
 
 
-Keyboard setup is an important part of reducing frustration when coding on a phone with a thumb.  
-My termux configurations below are for phones. For tablets change shift="0" to 10 or add blank keys.  
+Keyboard setup is an important part of **reducing** frustration when coding on a phone with a thumb.  
+My **termux** configurations below are for phones. For tablets change shift="0" to 10 or add blank keys.  
 To toggle hiding keyboard or extra-keys, swipe-right on termux left and long-press or click "keyboard".  
 My configurations below support these shortcuts:  
 - jump prev/next
@@ -19,7 +19,7 @@ My configurations below support these shortcuts:
 - comment line. swipeup comments and pastes duplicate
 - context-aware selection
 
-
+---
 
 Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md)  
 Set keyboard height to **10%**  
