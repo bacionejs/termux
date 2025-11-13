@@ -99,7 +99,7 @@ for c in range(char2nr('A'), char2nr('Z'))
   execute 'lnoremap ' . nr2char(c) . ' ' . nr2char(c+32)
 endfor
 
- backup current file to ~/delete/timestampedfile
+" backs up current file to ~/delete/timestampedfile
 nnoremap ,B :let fname = substitute(fnamemodify(expand('%:p'), ':h:t') . '/' . expand('%:t'), '/', '_', '') . '_' . strftime('%Y%m%d_%H%M%S') \| call mkdir(expand('~/delete'), 'p') \| call system('cp -n ' . shellescape(expand('%:p')) . ' ' . expand('~/delete/') . fname) \| echo 'Copied to: ~/delete/' . fname<CR>
 
 " toggles * highlight. also prevents auto-advance.
@@ -113,7 +113,7 @@ function! CommentReplaceAndMove()
     normal! j
 endfunction
 
-" Context-aware selection.  for example yiw becomes V, two less clicks.
+" Context-aware selection.  for example yiw becomes V (less clicks).
 " also works with paragraphs, quotes and blocks
 inoremap ,V <Esc>:call SuperSelect()<CR>
 nnoremap ,V :call SuperSelect()<CR>
