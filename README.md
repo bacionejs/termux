@@ -121,7 +121,7 @@ function! CommentReplaceAndMove()
     normal! j
 endfunction
 
-" Context-aware selection. for example yiw becomes V (less clicks).
+" Context-aware selection. for example yiw becomes only one click
 " also works with paragraphs, quotes and blocks
 inoremap ,V <Esc>:call SuperSelect()<CR>
 nnoremap ,V :call SuperSelect()<CR>
