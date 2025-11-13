@@ -21,7 +21,7 @@ My configurations below support these shortcuts:
 
 ---
 
-Using [Unexpected-Keyboard](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md)  
+Using [Unexpected-Keyboard](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md) for keyboard  
 Set keyboard height to **10%**  
 
 ```layout```
