@@ -108,6 +108,7 @@ Beware: the top two rows contain neovim macros and some point to functions in in
 
 </keyboard>
 ```
+</div>
 ```
 
 ## Configured termux extra-keys to replace entire keyboard
