@@ -38,7 +38,7 @@ extra-keys-text-all-caps = false
 hide-soft-keyboard-on-startup = true
 shortcut.previous-session = ctrl + 1
 
-# For tablets add 9 blank keys at the left of each row to push the keyboard to the right side for ease of right-thumb typing.  
+# For tablets add 9 blank keys in the left of each row to push the keyboard to the right side for ease of right-thumb typing.  
 extra-keys = [\
 [ \
 {key:HOME,display:'<<'}, {key:END,display:'>>'},\
