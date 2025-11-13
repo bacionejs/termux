@@ -30,7 +30,7 @@ My configuration below supports these **shortcuts**:
 
 ---
 
-Using termux extra-keys (**for entire keyboard**)  
+Using termux extra-keys **for entire keyboard** (hack)  
 https://wiki.termux.com/wiki/Touch_Keyboard  
 
 `termux.properties`
