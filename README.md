@@ -4,7 +4,7 @@ There are several Android code editors available on the Play Store, but **Termux
 For BacioneJS, see https://github.com/bacionejs/editor  
 <img src="https://raw.githubusercontent.com/bacionejs/editor/main/README.jpg" alt="README image" width="30%">
 
-For Termux/Neovim, see below.
+For complex needs, try Termux/Neovim.  
 
 ---
 
