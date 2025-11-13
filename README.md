@@ -16,7 +16,7 @@ A good keyboard setup is an important part of **reducing frustration** when codi
 
 My **Termux/Neovim** configuration below is for phones.  
 For tablets add blank keys to the left to push the keyboard to the right side.  
-My configuration below support these **shortcuts**:  
+My configuration below supports these **shortcuts**:  
 - save
 - backup
 - close file
