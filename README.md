@@ -13,16 +13,18 @@ https://github.com/termux/termux-app
 <img src="README.jpg" alt="README image" width="30%">
 
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb. My configuration below supports these **shortcuts**:  
-- save
-- backup
-- close file
+- all 32 special keys are visible
+- all alphabetic keys have swipe-up capitals
 - jump prev/next
-- jump next buffer
-- jump next terminal
+- close file
+- jump next buffer. swipe-up: jump next terminal
+- save. swipe-up: backup
+- esc. swipe-up: crtl
+- copy (context-aware selection)
+- paste
 - undo/redo
-- toggle highlight
-- toggle comments. swipeup comments and pastes duplicate
-- context-aware selection
+- toggle comments. swipe-up: comments and pastes duplicate
+- toggle highlight (\*)
 
 ---
 
