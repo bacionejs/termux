@@ -1,9 +1,9 @@
 # Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)
-[Custom Layouts](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md)
 - Set keyboard height to **10%**
 - Change shift="0" to 10 for tablets
-- My top rows contains macros
-- My ",V" mapping is my smart selection/copy. See init.vim
+- My top rows contains macros. See init.vim
+-- My ",B" is my backup mapping
+-- Mym",V" mapping is my smart selection/copy
 
 ```xml
 
