@@ -2,8 +2,8 @@
 - Set keyboard height to **10%**
 - Change shift="0" to 10 for tablets
 - My top rows contains macros. See init.vim
--- My ",B" is my backup mapping
--- Mym",V" mapping is my smart selection/copy
+  - My ",B" is my backup mapping
+  - My ",V" mapping is my smart selection/copy
 
 ```xml
 
