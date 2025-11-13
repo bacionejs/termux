@@ -12,14 +12,14 @@ For complex needs, try Termux/Neovim.
 https://github.com/termux/termux-app  
 <img src="README.jpg" alt="README image" width="30%">
 
-A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb. My configuration below supports these **shortcuts**:  
+A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb. My configuration below supports these **features**:  
 - all 32 special keys are visible
 - all alphabetic keys have swipe-up capitals
 - jump prev/next
 - close file
 - jump next buffer. swipe-up: jump next terminal
 - save. swipe-up: backup
-- esc. swipe-up: crtl
+- esc. swipe-up: ctrl
 - copy (context-aware selection)
 - paste
 - undo/redo
