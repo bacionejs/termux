@@ -1,5 +1,5 @@
-<div style="max-height:200px; overflow:auto;">
-<pre><code class="language-xml">
+<pre style="max-height:200px; overflow:auto; padding:8px; border-radius:6px;">
+<code class="language-xml">
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
   <row>
@@ -10,5 +10,5 @@
     <key c="ctrl"/>
   </row>
 </keyboard>
-</code></pre>
-</div>
+</code>
+</pre>
