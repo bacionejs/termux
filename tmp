@@ -1,0 +1,33 @@
+
+## Using termux extra-keys *for entire* keyboard*
+- termux.properties
+- init.vim
+
+<img src="README.jpg" alt="README image" width="30%">
+
+## How I wrote bacionejs on Android
+[Bacione Javascript Editor](https://github.com/bacionejs/editor) is an Integrated Development Environment (IDE) for programming small javascript games on a phone. Several games are included.
+
+I used the Neovim editor to create the Bacionejs editor. Below is my setup.
+
+## Installed
+- [termux](https://github.com/termux)
+- apache
+- neovim
+- conquer of completion
+
+## Which Editor to Use for Programming on a Phone/Tablet Offline?
+
+There are several editors available on the Play Store, but **Termux** combined with **Neovim** stands out as the superior choice. However, vim motions aren’t optimized for typing with a **thumb**.
+
+To address this issue, I created **[bacionejs](https://github.com/bacionejs/editor)**, which is designed specifically for programming small JavaScript games on mobile devices offline. For more extensive programming tasks, Neovim remains the recommended option.
+
+## Unexpected Keyboard
+
+### ⚠️ Beware
+- My top row contains **Neovim mappings**.  
+  For example, `S` is actually `<space>S` (where `<space>` is the leader key).  
+  This mapping triggers `:w` (save). You’ll likely want to remove these mappings.
+- I no longer use this keyboard, so you won’t find these mappings in my current `init.vim`.
+
+
