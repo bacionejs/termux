@@ -5,8 +5,8 @@ There are several Android code editors available on the Play Store, but **Termux
 
 
 Keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
-My **termux** configurations below are for phones. For tablets change shift="0" to 10 or add blank keys.  
-To toggle hiding keyboard or extra-keys, swipe-right on termux left and long-press or click "keyboard".  
+My **termux/neovim** configurations below are for phones. For tablets change shift="0" to 10 or add blank keys.  
+To toggle hiding the keyboard or extra-keys, swipe-right on termux left and long-press or click "keyboard".  
 My configurations below support these shortcuts:  
 - jump prev/next
 - jump next buffer
