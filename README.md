@@ -16,14 +16,13 @@ Below are two keyboard solutions:
 My **Termux/Neovim** configurations below are for phones. For tablets change shift="0" to 10 or add blank keys.  
 To toggle hiding the keyboard or extra-keys, swipe-right on termux left and long-press or click "keyboard".  
 My configurations below support these **shortcuts**:  
-- jump prev/next
-- jump next buffer
-- jump next terminal
 - save
 - backup
 - close file
+- jump prev/next
+- jump next buffer
+- jump next terminal
 - undo/redo
-- ctrl/esc
 - toggle highlight
 - toggle comments. swipeup comments and pastes duplicate
 - context-aware selection
