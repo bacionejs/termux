@@ -43,21 +43,17 @@ extra-keys = [\
 [ \
 {key:HOME,display:'<<'}, {key:END,display:'>>'},\
 'DOWN', 'UP', \
-{macro:"ESC CTRL o",display:'<'},\
-{macro:"ESC CTRL i",display:'>'},\
+{macro:"ESC CTRL o",display:'<'}, {macro:"ESC CTRL i",display:'>'},\
 {macro:"ESC :bw ENTER",display:'K'},\
 {macro:"ESC :bn ENTER",popup:{macro:"CTRL 1"},display:'N'},\
 {macro:"ESC :w ENTER",popup:{macro:",B"},display:'💾'},\
 {key:ESC,popup:{key:CTRL},display:'X'}\
 ], \
 [ \
-'?', \
-'QUOTE', \
+'?', 'QUOTE', \
 'LEFT', 'RIGHT', \
-{macro:",V",display:'📄'},\
-{key:p,display:'📋'},\
-{macro:"ESC u",display:'↩️'},\
-{macro:"ESC CTRL r",display:'↪️'},\
+{macro:",V",display:'📄'}, {key:p,display:'📋'},\
+{macro:"ESC u",display:'↩️'}, {macro:"ESC CTRL r",display:'↪️'},\
 {macro:"ESC +",popup:{macro:"ESC yypk+"},display:'//'},\
 'TAB'\
 ], \
