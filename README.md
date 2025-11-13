@@ -1,10 +1,13 @@
-# Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)
+# Try these keyboard setups
+
+## Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)
 - Set keyboard height to **10%**
 - Change shift="0" to 10 for tablets
 - My top rows contains macros and mappings. See init.vim
 - My mappings
   - ",B" is timestamped backup
   - ",V" is smart selection/copy 
+  - "//:esc,+" is comment toggle
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -42,8 +45,157 @@
 terminal-cursor-blink-rate = 1000
 terminal-cursor-style = bar
 extra-keys-text-all-caps = false
-# hide-soft-keyboard-on-startup = true
+hide-soft-keyboard-on-startup = true
 shortcut.previous-session = ctrl + 1
+
+extra-keys = [\
+[ \
+{macro:"ESC CTRL o",display:'<'},\
+{macro:"ESC CTRL i",display:'>'},\
+{macro:"ESC +",popup:{macro:"ESC yypk+"},display:'//'},\
+{macro:",V",display:'V'},\
+{macro:"ESC :bw ENTER",display:'K'},\
+{macro:"ESC :bn ENTER",popup:{macro:"CTRL 1"},display:'N'},\
+{macro:"ESC u",display:'U'},\
+{macro:"ESC CTRL r",display:'R'},\
+{macro:"ESC :w ENTER",popup:{macro:",B"},display:'S'},\
+{key:ESC,display:'X'}\
+], \
+[  '?',  'QUOTE',  {key:HOME,display:'<<'}, {key:END,display:'>>'}, 'LEFT',  'RIGHT',  'DOWN',  'UP',  'TAB',  {key:CTRL,display:'C'} ], \
+[  '(',  ')',  '{',  '}',  '[',  ']',  ',',  ';',  '.',  ':' ], \
+[  '&',  '|',  '+',  '-',  '=',  '!',  '<',  '>',  '*',  '/' ], \
+[  'BACKSLASH',  '`',  'APOSTROPHE',  '@',  '#',  '_',  '%',  '~',  '^',  '$' ], \
+[  '1',  '2',  '3',  '4',  '5',  '6',  '7',  '8',  '9',  '0' ], \
+[ {key:'q',popup:'Q'}, {key:'w',popup:'W'}, {key:'e',popup:'E'}, {key:'r',popup:'R'}, {key:'t',popup:'T'}, {key:'y',popup:'Y'}, {key:'u',popup:'U'}, {key:'i',popup:'I'}, {key:'o',popup:'O'}, {key:'p',popup:'P'} ], \
+[ {key:'a',popup:'A'}, {key:'s',popup:'S'}, {key:'d',popup:'D'}, {key:'f',popup:'F'}, {key:'g',popup:'G'}, {key:'h',popup:'H'}, {key:'j',popup:'J'}, {key:'k',popup:'K'}, {key:'l',popup:'L'}, {key:"BKSP",popup:{macro:"CTRL ^"}} ], \
+[ {key:'z',popup:'Z'}, {key:'x',popup:'X'}, {key:'c',popup:'C'}, {key:'v',popup:'V'}, {key:'b',popup:'B'}, {key:'n',popup:'N'}, {key:'m',popup:'M'}, {key:'SPACE',display:' '}, {key:'SPACE',display:' '}, 'ENTER' ] \
+]
+
+
+
+```
+
+```
+
+filetype indent off
+set autoindent
+set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)
+set hidden
+set showbreak=>\ 
+let mapleader=","
+
+" soft-shift activated with c-^. See termux.properties.
+for c in range(char2nr('A'), char2nr('Z'))
+  execute 'lnoremap ' . nr2char(c+32) . ' ' . nr2char(c)
+  execute 'lnoremap ' . nr2char(c) . ' ' . nr2char(c+32)
+endfor
+
+
+" backup current file to ~/delete/timestampedfile
+nnoremap ,B :let fname = substitute(fnamemodify(expand('%:p'), ':h:t') . '/' . expand('%:t'), '/', '_', '') . '_' . strftime('%Y%m%d_%H%M%S') \| call mkdir(expand('~/delete'), 'p') \| call system('cp -n ' . shellescape(expand('%:p')) . ' ' . expand('~/delete/') . fname) \| echo 'Copied to: ~/delete/' . fname<CR>
+
+
+
+
+" remove whitespace in file
+function! CleanJSAll()
+  " Replace quoted strings, preserving internal spaces
+  %s/\v"([^"]*)"/\="\"" . substitute(submatch(1), ' ', '__SPACE__', 'g') . "\"" /g
+
+  " Handle ' of ' and ' in ' with spacing replaced
+  %s/\v\s+of\s+/__SPACE__of__SPACE__/g
+  %s/\v\s+in\s+/__SPACE__in__SPACE__/g
+
+  " Add __SPACE__ after certain keywords, including multiple in a row
+  let @/ = ''
+  while 1
+    let l:before = join(getline(1, '$'), "\n")
+    %s/\v<(function|let|return|new|const|async|await|typeof|import|from)>(\s+)/\1__SPACE__/g
+    let l:after = join(getline(1, '$'), "\n")
+    if l:before == l:after
+      break
+    endif
+  endwhile
+
+  " Replace 'else if' and 'else <word>' separately
+  %s/\velse\s+if/else__SPACE__if/g
+  %s/\velse\s+(\w)/else__SPACE__\1/g
+
+  " Replace leading indentation with __INDENT__
+  %s/^\s\+/\=substitute(matchstr(getline('.'), '^\s\+'), ' ', '__INDENT__', 'g')/g
+
+  " Remove all remaining spaces
+  %s/ //g
+
+  " Restore placeholders
+  %s/__SPACE__/ /g
+  %s/__INDENT__/ /g
+endfunction
+
+command! CleanJSAll call CleanJSAll()
+nnoremap <Leader>F :CleanJSAll<CR>
+
+
+
+
+
+
+" toggles *. also prevents auto-advance.
+nnoremap <silent><expr> * (&hls && v:hlsearch ? ':noh' : ':let @/= "\\<" . expand("<cword>") . "\\>" \| set hls')."\n"
+" toggles comments
+nnoremap + :call CommentReplaceAndMove()<CR>
+" Context-aware selection. ciw becomes Vc, one less click.
+" also works with paragraphs, quotes and blocks
+inoremap ,V <Esc>:call SuperSelect()<CR>
+nnoremap ,V :call SuperSelect()<CR>
+" extends selection
+vmap ,V :<C-u>call ExtendSelection()<CR>
+
+function! CommentReplaceAndMove()
+    let c = substitute(&commentstring, '%s', '', '')
+    execute 'silent! :s#^#'.c.'#e|s#^'.c.c.'##e'
+    normal! j
+endfunction
+
+function! SuperSelect()
+let c = getline('.')[col('.') - 1]
+if c =~ '\w'
+  normal! viw
+elseif c =~ '"'
+  normal! va"
+elseif c =~ '^\s*$'
+  normal! jvap
+elseif c =~ '[][}{)(]'
+  normal! v%
+  if line("'>") - line("'<") + 1 > 1
+    normal! V
+    if c =~ '[]})]'
+      normal! o
+    endif
+    let i = line('.') + 1
+    while i <= line('$') && getline(i) =~# '^\s*$'
+      normal! j
+      let i += 1
+    endwhile
+  endif
+endif
+normal! ygv
+endfunction
+
+function! ExtendSelection()
+    normal! gvl
+    let c = getline('.')[getpos("'>")[2]]
+    let c2 = getline('.')[getpos("'>")[2] + 1]
+    if c =~ '[[({]'
+        normal! %
+    elseif c =~ '\w' && c2 =~ '\w'
+        normal! e
+    endif
+endfunction
+
+
+```
 
 # all alphabetic keys have swipeup for capital
 # <>: jump prev/next
@@ -58,201 +210,6 @@ shortcut.previous-session = ctrl + 1
 # >>: end
 # C : ctrl
 # backspace. swipeup toggles fake capslock in insert mode.
-extra-keys = [\
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-{macro:"ESC CTRL o",display:'<'},\
-{macro:"ESC CTRL i",display:'>'},\
-{macro:"ESC +",popup:{macro:"ESC yypk+"},display:'//'},\
-{macro:",V",display:'V'},\
-{macro:"ESC :bw ENTER",display:'K'},\
-{macro:"ESC :bn ENTER",popup:{macro:"CTRL 1"},display:'N'},\
-{macro:"ESC u",display:'U'},\
-{macro:"ESC CTRL r",display:'R'},\
-{macro:"ESC :w ENTER",popup:{macro:",B"},display:'S'},\
-{key:ESC,display:'X'},\
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '?', \
-               'QUOTE', \
-{key:HOME,display:'<<'},\
-{key:END,display:'>>'},\
-               'LEFT', \
-               'RIGHT', \
-               'DOWN', \
-               'UP', \
-               'TAB', \
-{key:CTRL,display:'C'},\
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-{macro:"ESC dapi",display:'P'}, \
-{macro:"V%c",display:'F'},\
-{macro:"ggVGc",display:'A'},\
-               '', \
-{macro:"ESC dd",display:'D'}, \
-               '', \
-               '(', \
-               ')', \
-               '{', \
-               '}', \
-               '[', \
-               ']', \
-               ',', \
-               ';', \
-               '.', \
-               ':', \
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-{macro:"ESC 10o ESC 4ki",display:'I'}, \
-               '', \
-               '&', \
-               '|', \
-               '+', \
-               '-', \
-               '=', \
-               '!', \
-               '<', \
-               '>', \
-               '*', \
-               '/', \
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-{macro:"ESC dipO ESC",display:'U'}, \
-               '', \
-               'BACKSLASH', \
-               '`', \
-               'APOSTROPHE', \
-               '@', \
-               '#', \
-               '_', \
-               '%', \
-               '~', \
-               '^', \
-               '$', \
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '1', \
-               '2', \
-               '3', \
-               '4', \
-               '5', \
-               '6', \
-               '7', \
-               '8', \
-               '9', \
-               '0', \
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               {key:'q',popup:'Q'},\
-               {key:'w',popup:'W'},\
-               {key:'e',popup:'E'},\
-               {key:'r',popup:'R'},\
-               {key:'t',popup:'T'},\
-               {key:'y',popup:'Y'},\
-               {key:'u',popup:'U'},\
-               {key:'i',popup:'I'},\
-               {key:'o',popup:'O'},\
-               {key:'p',popup:'P'}, \
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               {key:'a',popup:'A'},\
-               {key:'s',popup:'S'},\
-               {key:'d',popup:'D'},\
-               {key:'f',popup:'F'},\
-               {key:'g',popup:'G'},\
-               {key:'h',popup:'H'},\
-               {key:'j',popup:'J'},\
-               {key:'k',popup:'K'},\
-               {key:'l',popup:'L'},\
-{key:"BKSP",popup:{macro:"CTRL ^"}},\
-               '' \
-               ], \
-               [ \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               '', \
-               {key:'z',popup:'Z'},\
-               {key:'x',popup:'X'},\
-               {key:'c',popup:'C'},\
-               {key:'v',popup:'V'},\
-               {key:'b',popup:'B'},\
-               {key:'n',popup:'N'},\
-               {key:'m',popup:'M'},\
-               {key:'SPACE',display:' '},\
-               {key:'SPACE',display:' '},\
-               'ENTER',\
-               '' \
-               ] \
-               ]
-
-```
-
-
 - termux.properties
 - init.vim
 
