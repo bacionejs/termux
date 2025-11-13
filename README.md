@@ -3,6 +3,7 @@ There are several Android code editors available on the Play Store, but **Termux
 
 ---
 
+**Termux/Neovim**
 
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
 Below are two keyboard solutions, Unexpected-Keyboard or termux-extra-keys (hack using as entire keyboard).  
