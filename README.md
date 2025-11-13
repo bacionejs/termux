@@ -34,78 +34,12 @@
 <key c="//:esc,+" n="=:esc,yypk+"/>
 <key c="tab"/>
 </row>
-<row>
-<key shift="0" c="("/>
-<key c=")"/>
-<key c="{"/>
-<key c="}"/>
-<key c="["/>
-<key c="]"/>
-<key c=","/>
-<key c=";"/>
-<key c="."/>
-<key c=":"/>
-</row>
-<row>
-<key shift="0" c="&amp;"/>
-<key c="|"/>
-<key c="+"/>
-<key c="-"/>
-<key c="="/>
-<key c="!"/>
-<key c="&lt;"/>
-<key c="&gt;"/>
-<key c="*"/>
-<key c="/"/>
-</row>
-<row>
-<key shift="0" c="1" n="\\"/>
-<key c="2" n="`"/>
-<key c="3" n="'"/>
-<key c="4" n="@"/>
-<key c="5" n="#"/>
-<key c="6" n="_"/>
-<key c="7" n="%"/>
-<key c="8" n="~"/>
-<key c="9" n="^"/>
-<key c="0" n="$"/>
-</row>
-<row>
-<key shift="0" c="q" n="Q"/>
-<key c="w" n="W"/>
-<key c="e" n="E"/>
-<key c="r" n="R"/>
-<key c="t" n="T"/>
-<key c="y" n="Y"/>
-<key c="u" n="U"/>
-<key c="i" n="I"/>
-<key c="o" n="O"/>
-<key c="p" n="P"/>
-</row>
-<row>
-<key shift="0" c="a" n="A"/>
-<key c="s" n="S"/>
-<key c="d" n="D"/>
-<key c="f" n="F"/>
-<key c="g" n="G"/>
-<key c="h" n="H"/>
-<key c="j" n="J"/>
-<key c="k" n="K"/>
-<key c="l" n="L"/>
-<key c="shift"/>
-</row>
-<row>
-<key shift="0" c="z" n="Z"/>
-<key c="x" n="X"/>
-<key c="c" n="C"/>
-<key c="v" n="V"/>
-<key c="b" n="B"/>
-<key c="n" n="N"/>
-<key c="m" n="M"/>
-<key c="space"/>
-<key c="backspace"/>
-<key c="enter"/>
-</row>
+<row> <key shift="0" c="("/> <key c=")"/> <key c="{"/> <key c="}"/> <key c="["/> <key c="]"/> <key c=","/> <key c=";"/> <key c="."/> <key c=":"/> </row>
+<row> <key shift="0" c="&amp;"/> <key c="|"/> <key c="+"/> <key c="-"/> <key c="="/> <key c="!"/> <key c="&lt;"/> <key c="&gt;"/> <key c="*"/> <key c="/"/> </row>
+<row> <key shift="0" c="1" n="\\"/> <key c="2" n="`"/> <key c="3" n="'"/> <key c="4" n="@"/> <key c="5" n="#"/> <key c="6" n="_"/> <key c="7" n="%"/> <key c="8" n="~"/> <key c="9" n="^"/> <key c="0" n="$"/> </row>
+<row> <key shift="0" c="q" n="Q"/> <key c="w" n="W"/> <key c="e" n="E"/> <key c="r" n="R"/> <key c="t" n="T"/> <key c="y" n="Y"/> <key c="u" n="U"/> <key c="i" n="I"/> <key c="o" n="O"/> <key c="p" n="P"/> </row>
+<row> <key shift="0" c="a" n="A"/> <key c="s" n="S"/> <key c="d" n="D"/> <key c="f" n="F"/> <key c="g" n="G"/> <key c="h" n="H"/> <key c="j" n="J"/> <key c="k" n="K"/> <key c="l" n="L"/> <key c="shift"/> </row>
+<row> <key shift="0" c="z" n="Z"/> <key c="x" n="X"/> <key c="c" n="C"/> <key c="v" n="V"/> <key c="b" n="B"/> <key c="n" n="N"/> <key c="m" n="M"/> <key c="space"/> <key c="backspace"/> <key c="enter"/> </row>
 
 
 </keyboard>
