@@ -68,7 +68,8 @@ Set keyboard height to **10%**
 </keyboard>
 ```
 ---
-Using [termux extra-keys](https://wiki.termux.com/wiki/Touch_Keyboard) **for entire keyboard**  
+Using termux extra-keys (**for entire keyboard**)  
+https://wiki.termux.com/wiki/Touch_Keyboard  
 
 `termux.properties`
 ```properties
