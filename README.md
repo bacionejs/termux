@@ -1,36 +1,28 @@
 # Using [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard)
 - Set keyboard height to **10%**
 - Change shift="0" to 10 for tablets
-- My top rows contains macros. See init.vim
-  - My ",B" is my backup mapping
-  - My ",V" mapping is my smart selection/copy
+- My top rows contains macros and mappings. See init.vim
+- My mappings
+  - ",B" is timestamped backup
+  - ",V" is smart selection/copy 
 
 ```xml
-
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
 
 <row>
-<key shift="0" c="home"/>
-<key c="end"/>
-<key c="up"/>
-<key c="down"/>
-<key c="&lt;:esc,ctrl,o"/>
-<key c="&gt;:esc,ctrl,i"/>
+<key shift="0" c="home"/> <key c="end"/> <key c="up"/> <key c="down"/>
+<key c="&lt;:esc,ctrl,o"/> <key c="&gt;:esc,ctrl,i"/>
 <key w="config" e="switch_forward" c="change_method_prev" nw="switch_clipboard" n="change_method" sw="voice_typing" s="compose"/>
 <key c="esc"/>
 <key c="S:esc,:w,enter" e="N:esc,:bn,enter" s="K:esc,:bw,enter" n="B:\,B" w="T:ctrl,1"/>
 <key c="ctrl"/>
 </row>
 <row>
-<key shift="0" c="?"/>
-<key c="&quot;"/>
-<key c="left"/>
-<key c="right"/>
-<key c="C:\,V"/>
-<key c="P:p"/>
-<key c="U:esc,u"/>
-<key c="R:esc,ctrl,r"/>
+<key shift="0" c="?"/> <key c="&quot;"/>
+<key c="left"/> <key c="right"/>
+<key c="C:\,V"/> <key c="P:p"/>
+<key c="U:esc,u"/> <key c="R:esc,ctrl,r"/>
 <key c="//:esc,+" n="=:esc,yypk+"/>
 <key c="tab"/>
 </row>
@@ -41,9 +33,7 @@
 <row> <key shift="0" c="a" n="A"/> <key c="s" n="S"/> <key c="d" n="D"/> <key c="f" n="F"/> <key c="g" n="G"/> <key c="h" n="H"/> <key c="j" n="J"/> <key c="k" n="K"/> <key c="l" n="L"/> <key c="shift"/> </row>
 <row> <key shift="0" c="z" n="Z"/> <key c="x" n="X"/> <key c="c" n="C"/> <key c="v" n="V"/> <key c="b" n="B"/> <key c="n" n="N"/> <key c="m" n="M"/> <key c="space"/> <key c="backspace"/> <key c="enter"/> </row>
 
-
 </keyboard>
-
 ```
 
 ## Using termux extra-keys **for entire* keyboard**
