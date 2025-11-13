@@ -10,7 +10,7 @@ Below is a keyboard layout I configured for coding on Termux/Neovim.
 This version is for tablets; it shifts the keyboard rightward for ease of right-thumb typing. 
 For phones, remove the top-left key and set all shift="" to 0
 
-This layout gives the same affect as my extra-keys hack, so you may want to try that instead:
+This layout gives the same effect as my extra-keys hack, so you may want to try that instead:
 https://github.com/bacionejs/termux
 -->
 
