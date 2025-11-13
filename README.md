@@ -4,7 +4,7 @@ There are several Android code editors available on the Play Store, but **Termux
 ---
 
 
-Keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
+A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
 Below are two keyboard solutions, Unexpected-Keyboard or termux-extra-keys (hack using as entire keyboard).  
 My **Termux/Neovim** configurations below are for phones. For tablets change shift="0" to 10 or add blank keys.  
 To toggle hiding the keyboard or extra-keys, swipe-right on termux left and long-press or click "keyboard".  
