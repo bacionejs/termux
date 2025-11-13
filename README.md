@@ -12,8 +12,7 @@ For complex needs, try Termux/Neovim.
 https://github.com/termux/termux-app  
 <img src="README.jpg" alt="README image" width="30%">
 
-A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
-My configuration below supports these **shortcuts**:  
+A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb. My configuration below supports these **shortcuts**:  
 - save
 - backup
 - close file
