@@ -1,6 +1,7 @@
 There are several editors available on the Play Store, but **Termux** combined with **Neovim** stands out as the superior choice. However, vim motions aren’t optimized for typing with a **thumb**. To address this issue, I created **[bacionejs](https://github.com/bacionejs/editor)**, which is designed specifically for programming small JavaScript games on mobile devices offline. For more extensive programming tasks, Neovim remains the recommended option.
 
-## Try unexpected-keyboard or extra-keys **for entire keyboard**. My configuration below support these shortcuts:
+## Try unexpected-keyboard or extra-keys **for entire keyboard**
+My configuration below support these shortcuts:
 - jump prev/next
 - jump next buffer
 - jump next terminal
