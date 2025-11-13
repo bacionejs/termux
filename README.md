@@ -6,7 +6,7 @@ For Termux/Neovim, see below.
 
 ---
 
-**Termux/Neovim**
+**Termux/Neovim**  
 https://github.com/termux/termux-app
 
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb.  
