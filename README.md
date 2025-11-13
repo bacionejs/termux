@@ -30,7 +30,7 @@ My configurations below support these **shortcuts**:
 Using [Unexpected-Keyboard](https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md) for keyboard  
 Set keyboard height to **10%**  
 
-```layout```
+`layout`
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
@@ -63,7 +63,7 @@ Set keyboard height to **10%**
 ---
 Using [termux extra-keys](https://wiki.termux.com/wiki/Touch_Keyboard) **for entire keyboard**  
 
-```termux.properties```
+`termux.properties`
 ```properties
 hide-soft-keyboard-on-startup = true
 shortcut.previous-session = ctrl + 1
@@ -96,7 +96,7 @@ extra-keys = [\
 ```
 ---
 `init.vim`
-```
+```vimscript
 " Hack for extra-keys capslock, activated with c-^. 
 for c in range(char2nr('A'), char2nr('Z'))
   execute 'lnoremap ' . nr2char(c+32) . ' ' . nr2char(c)
