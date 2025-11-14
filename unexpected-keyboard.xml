@@ -10,7 +10,6 @@ This layout gives the same effect as my extra-keys hack, so you may want to try 
 https://github.com/bacionejs/termux 
 
 In the keyboard app settings, set keyboard height to 10% 
-
 -->
 
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
