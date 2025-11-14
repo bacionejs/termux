@@ -29,7 +29,6 @@ A good keyboard setup is an important part of **reducing frustration** when codi
 ---
 
 Using termux extra-keys **for entire keyboard** (hack 🤯)  
-https://wiki.termux.com/wiki/Touch_Keyboard  
 
 `termux.properties`
 ```properties
