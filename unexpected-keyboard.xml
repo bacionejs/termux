@@ -6,10 +6,7 @@ https://github.com/Julow/Unexpected-Keyboard/blob/master/doc/Custom-layouts.md
 
 Below is a keyboard layout I configured for coding on Termux/Neovim. This version is for tablets; it shifts the keyboard rightward for ease of right-thumb typing.  For phones, remove the top-left key and set all shift="" to 0  
 
-This layout gives the same effect as my extra-keys hack, so you may want to try that instead:
-https://github.com/bacionejs/termux 
-
-Also, some macros here require my init.vim: 
+This layout gives the same effect as my extra-keys hack, so you may want to try that instead. Also, some macros here require my init.vim: 
 https://github.com/bacionejs/termux 
 
 In the keyboard app settings, set keyboard height to 10% 
@@ -19,28 +16,19 @@ In the keyboard app settings, set keyboard height to 10%
 <keyboard name="termux_neovim" script="latin" bottom_row="false">
 <row>
   <key shift="6" w="config" e="switch_forward" c="change_method_prev" nw="switch_clipboard" n="change_method" sw="voice_typing" s="compose"/>
-  <key shift="1" c="home"/>
-  <key c="end"/>
-  <key c="down"/>
-  <key c="up"/>
-  <key c="&lt;:esc,ctrl,o"/>
-  <key c="&gt;:esc,ctrl,i"/>
+  <key shift="1" c="home"/> <key c="end"/> <key c="down"/> <key c="up"/>
+  <key c="&lt;:esc,ctrl,o"/> <key c="&gt;:esc,ctrl,i"/>
   <key c="K:esc,:bw,enter"/>
   <key c="N:esc,:bn,enter" n="T:ctrl,1"/>
   <key c="💾:esc,:w,enter" n="B:\,B"/>
   <key c="esc" n="ctrl"/>
 </row>
 <row>
-  <key shift="8" c="?"/>
-  <key c="&quot;"/>
-  <key c="left"/>
-  <key c="right"/>
-  <key c="📄:\,V"/>
-  <key c="📋"/>
-  <key c="↩️:esc,u"/>
-  <key c="↪️:esc,ctrl,r"/>
-  <key c="//:esc,+" n="=:esc,yypk+"/>
-  <key c="tab"/>
+  <key shift="8" c="?"/> <key c="&quot;"/>
+  <key c="left"/> <key c="right"/>
+  <key c="📄:\,V"/> <key c="📋"/>
+  <key c="↩️:esc,u"/> <key c="↪️:esc,ctrl,r"/>
+  <key c="//:esc,+" n="=:esc,yypk+"/> <key c="tab"/>
 </row>
 <row> <key shift="8" c="("/> <key c=")"/> <key c="{"/> <key c="}"/> <key c="["/> <key c="]"/> <key c=","/> <key c=";"/> <key c="."/> <key c=":"/> </row>
 <row> <key shift="8" c="&amp;"/> <key c="|"/> <key c="+"/> <key c="-"/> <key c="="/> <key c="!"/> <key c="&lt;"/> <key c="&gt;"/> <key c="*"/> <key c="/"/> </row>
