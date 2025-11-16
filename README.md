@@ -12,6 +12,7 @@ To open the editor, click ↴
 For complex needs, try **Termux/Neovim**
 
 https://github.com/termux/termux-app  
+  
 
 <img src="README.jpg" alt="README image" width="30%">
   
