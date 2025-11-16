@@ -52,7 +52,10 @@ extra-keys = [\
 [ {key:'z',popup:'Z'},{key:'x',popup:'X'},{key:'c',popup:'C'},{key:'v',popup:'V'},{key:'b',popup:'B'},{key:'n',popup:'N'},{key:'m',popup:'M'},{key:'SPACE',display:' '},{key:'BKSP'},'ENTER'] \
 ]
 ```
-</details><details><summary>init.vim</summary>
+</details>
+
+
+<details><summary>init.vim</summary>
 ```vimscript
 " Hack for extra-keys capslock, activated with c-^. 
 for c in range(char2nr('A'), char2nr('Z'))
@@ -83,6 +86,7 @@ vmap ,V :<C-u>call ExtendSelection()<CR>
 function! SuperSelect() | let c=getline('.')[col('.')-1] | if c=~'\w'|normal! viw|elseif c=~'"'|normal! va"|elseif c=~'^\s*$'|normal! jvap|elseif c=~'[][}{)(]'|normal! v%|if line("'>")-line("'<")+1>1|normal! V|if c=~'[]})]'|normal! o|endif|let i=line('.')+1|while i<=line('$')&&getline(i)=~#'^\s*$'|normal! j|let i+=1|endw|endif|endif|normal! ygv|endfunction
 function! ExtendSelection() | normal! gvl | let c=getline('.')[getpos("'>")[2]] | let c2=getline('.')[getpos("'>")[2]+1] | if c=~'[[({]'|normal! %|elseif c=~'\w'&&c2=~'\w'|normal! e|endif|endfunction
 ```
+
 </details>
 
 ---
