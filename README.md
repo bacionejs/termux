@@ -18,8 +18,7 @@ A good keyboard setup is an important part of **reducing frustration** when codi
 - undo/redo
 - toggle comments. swipe-up: comments and pastes duplicate
 - toggle highlight (\*)
-</details><details>
-<summary>termux.properties</summary>
+</details><details><summary>termux.properties</summary>
 ```properties
 extra-keys-text-all-caps = false
 hide-soft-keyboard-on-startup = true
