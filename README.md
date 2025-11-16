@@ -56,10 +56,8 @@ extra-keys = [\
 ]
 ```
 
-</details>
+</details><details><summary>init.vim</summary>
 
-
-<details><summary>init.vim</summary>
 ```vimscript
 " Hack for extra-keys capslock, activated with c-^. 
 for c in range(char2nr('A'), char2nr('Z'))
