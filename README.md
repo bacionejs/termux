@@ -5,6 +5,7 @@ https://github.com/termux/termux-app
 <img src="README.jpg" alt="README image" width="30%">
 
 <details><summary>Keyboard Features</summary>
+
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb. My configuration uses termux extra-keys **for the entire keyboard** (hack 🤯) and supports these **features**:  
 - all 32 special keys are visible
 - all alphabetic keys have swipe-up capitals
@@ -18,6 +19,7 @@ A good keyboard setup is an important part of **reducing frustration** when codi
 - undo/redo
 - toggle comments. swipe-up: comments and pastes duplicate
 - toggle highlight (\*)
+
 </details><details><summary>termux.properties</summary>
 
 ```properties
