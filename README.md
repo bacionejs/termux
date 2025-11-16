@@ -2,7 +2,7 @@
 ---
 
 For programming small javascript games, try **BacioneJS**.
-  
+
 To open the editor, click ↴  
 <a href="//bacionejs.github.io/editor/bacionejs.html" target="_blank"> <img src="https://repository-images.githubusercontent.com/788276995/5a729f8a-02e1-4c07-bb85-895e23758cee" width="100%"> </a>
 
@@ -12,11 +12,11 @@ To open the editor, click ↴
 For complex needs, try **Termux/Neovim**
 
 https://github.com/termux/termux-app  
-  
 
 <img src="README.jpg" alt="README image" width="30%">
-  
-  
+
+---
+
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb. My configuration uses termux extra-keys **for the entire keyboard** (hack 🤯) and supports these **features**:  
 - all 32 special keys are visible
 - all alphabetic keys have swipe-up capitals
