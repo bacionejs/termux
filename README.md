@@ -1,22 +1,10 @@
-
----
-
-For programming small javascript games, try **BacioneJS**.
-
-To open the editor, click ↴  
-<a href="//bacionejs.github.io/editor/bacionejs.html" target="_blank"> <img src="https://repository-images.githubusercontent.com/788276995/5a729f8a-02e1-4c07-bb85-895e23758cee" width="100%"> </a>
-
-
----
-
-For complex needs, try **Termux/Neovim**
+**Termux/Neovim**
 
 https://github.com/termux/termux-app  
 
 <img src="README.jpg" alt="README image" width="30%">
 
----
-<details>
+<details><summary>Keyboard Features</summary>
 A good keyboard setup is an important part of **reducing frustration** when coding on a phone with a thumb. My configuration uses termux extra-keys **for the entire keyboard** (hack 🤯) and supports these **features**:  
 - all 32 special keys are visible
 - all alphabetic keys have swipe-up capitals
@@ -30,11 +18,8 @@ A good keyboard setup is an important part of **reducing frustration** when codi
 - undo/redo
 - toggle comments. swipe-up: comments and pastes duplicate
 - toggle highlight (\*)
-
-</details>
----
-
-`termux.properties`
+</details><details>
+<summary>termux.properties</summary>
 ```properties
 extra-keys-text-all-caps = false
 hide-soft-keyboard-on-startup = true
@@ -68,9 +53,7 @@ extra-keys = [\
 [ {key:'z',popup:'Z'},{key:'x',popup:'X'},{key:'c',popup:'C'},{key:'v',popup:'V'},{key:'b',popup:'B'},{key:'n',popup:'N'},{key:'m',popup:'M'},{key:'SPACE',display:' '},{key:'BKSP'},'ENTER'] \
 ]
 ```
-
----
-`init.vim`
+</details><details><summary>init.vim</summary>
 ```vimscript
 " Hack for extra-keys capslock, activated with c-^. 
 for c in range(char2nr('A'), char2nr('Z'))
@@ -101,4 +84,11 @@ vmap ,V :<C-u>call ExtendSelection()<CR>
 function! SuperSelect() | let c=getline('.')[col('.')-1] | if c=~'\w'|normal! viw|elseif c=~'"'|normal! va"|elseif c=~'^\s*$'|normal! jvap|elseif c=~'[][}{)(]'|normal! v%|if line("'>")-line("'<")+1>1|normal! V|if c=~'[]})]'|normal! o|endif|let i=line('.')+1|while i<=line('$')&&getline(i)=~#'^\s*$'|normal! j|let i+=1|endw|endif|endif|normal! ygv|endfunction
 function! ExtendSelection() | normal! gvl | let c=getline('.')[getpos("'>")[2]] | let c2=getline('.')[getpos("'>")[2]+1] | if c=~'[[({]'|normal! %|elseif c=~'\w'&&c2=~'\w'|normal! e|endif|endfunction
 ```
+</details><details>
 
+---
+
+For programming small javascript games, try **BacioneJS**.
+
+To open the editor, click ↴  
+<a href="//bacionejs.github.io/editor/bacionejs.html" target="_blank"> <img src="https://repository-images.githubusercontent.com/788276995/5a729f8a-02e1-4c07-bb85-895e23758cee" width="100%"> </a>
