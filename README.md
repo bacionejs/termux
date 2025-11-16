@@ -3,7 +3,7 @@
 
 There are several Android code editors, but **Termux/Neovim** stands out as a superior choice. However, vim-motions aren’t optimized for typing with a **thumb**, so I created **BacioneJS**.
   
-To run the editor, click ↴  
+To open the editor, click ↴  
 <a href="//bacionejs.github.io/editor/bacionejs.html" target="_blank"> <img src="https://repository-images.githubusercontent.com/788276995/5a729f8a-02e1-4c07-bb85-895e23758cee" width="100%"> </a>
 
 For complex needs, try Termux/Neovim.  
