@@ -19,11 +19,13 @@ A good keyboard setup is an important part of **reducing frustration** when codi
 - toggle comments. swipe-up: comments and pastes duplicate
 - toggle highlight (\*)
 </details><details><summary>termux.properties</summary>
+
 ```properties
 extra-keys-text-all-caps = false
 hide-soft-keyboard-on-startup = true
 shortcut.previous-session = ctrl + 1
 
+# For tablets add 9 blank keys in the left of each row to push the keyboard to the right side for ease of right-thumb typing.  
 extra-keys = [\
 [ \
 {key:HOME,display:'<<'}, {key:END,display:'>>'},\
@@ -51,6 +53,7 @@ extra-keys = [\
 [ {key:'z',popup:'Z'},{key:'x',popup:'X'},{key:'c',popup:'C'},{key:'v',popup:'V'},{key:'b',popup:'B'},{key:'n',popup:'N'},{key:'m',popup:'M'},{key:'SPACE',display:' '},{key:'BKSP'},'ENTER'] \
 ]
 ```
+
 </details>
 
 
