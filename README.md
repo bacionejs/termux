@@ -1,5 +1,5 @@
 
-<img src="https://repository-images.githubusercontent.com/831696550/42580163-b660-4d14-b3ed-4b2f4a0d6738" width="50%">
+<img src="https://repository-images.githubusercontent.com/831696550/42580163-b660-4d14-b3ed-4b2f4a0d6738" width="80%">
 
 Hack for configuring an awesome keyboard setup for Termux/Neovim.  
 
