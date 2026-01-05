@@ -1,5 +1,5 @@
 
-<img src="https://repository-images.githubusercontent.com/831696550/42580163-b660-4d14-b3ed-4b2f4a0d6738" width="30%">
+<img src="https://repository-images.githubusercontent.com/831696550/42580163-b660-4d14-b3ed-4b2f4a0d6738" width="50%">
 
 Hack for configuring an awesome keyboard setup for Termux/Neovim.  
 
@@ -90,10 +90,3 @@ function! ExtendSelection() | normal! gvl | let c=getline('.')[getpos("'>")[2]] 
 
 </details>
 
----
-
-For simple stuff, try [BacioneJS](https://github.com/bacionejs/editor)
-
-<a href="//bacionejs.github.io/editor/bacionejs.html" target="_blank"> <img src="https://repository-images.githubusercontent.com/788276995/040a885f-c9e7-431b-bd4f-27a9069971b6" width="100%"> </a>
-
----
